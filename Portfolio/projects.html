@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shivani — Projects</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- header same as index -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <div class="logo">SB</div>
+        <div class="brand-text">
+          <strong>Shivani Bisht</strong>
+          <small>Full Stack Developer</small>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+        <a href="resume.pdf" class="btn btn-ghost" download>Resume</a>
+        <button id="themeToggle2" class="icon-btn" aria-label="Toggle theme">🌗</button>
+        <button id="mobileNavBtn2" class="icon-btn mobile-only" aria-label="Open menu">☰</button>
+      </nav>
+    </div>
+    <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="container projects-hero">
+      <h1>Projects</h1>
+      <p class="lead">Detailed descriptions, tech stacks, screenshots and links for each major project.</p>
+    </section>
+
+    <section class="container project-detail" id="quickbite">
+      <div class="card">
+        <h2>QuickBite — Food Management System</h2>
+        <p><strong>Tech:</strong> React, Node.js, Express, MongoDB, Stripe, Tailwind</p>
+        <ul>
+          <li>Customer & admin interfaces, order management, live updates.</li>
+          <li>Secure authentication (JWT), role-based admin controls.</li>
+          <li>Stripe integration for payments and webhooks.</li>
+        </ul>
+        <p class="muted">Link: <a href="#" class="link-inline">Source</a></p>
+      </div>
+    </section>
+
+    <section class="container project-detail" id="pseudocode">
+      <div class="card">
+        <h2>Web-Based Pseudocode → C Converter</h2>
+        <p><strong>Tech:</strong> Python, Flask, JavaScript, HTML/CSS</p>
+        <ul>
+          <li>Parses structured pseudocode and emits C source code.</li>
+          <li>Single-page UI with input, output, and sample testcases.</li>
+          <li>Server-side parsing to ensure safe and deterministic conversion.</li>
+        </ul>
+        <p class="muted">Link: <a href="#" class="link-inline">Source</a></p>
+      </div>
+    </section>
+
+    <section class="container project-detail" id="fitness">
+      <div class="card">
+        <h2>Fitness Tracker UI</h2>
+        <p><strong>Tech:</strong> React.js, CSS, Local Storage</p>
+        <ul>
+          <li>Responsive UI to add daily workouts, calories and steps.</li>
+          <li>PWA-ready structure and offline support via Local Storage.</li>
+          <li>Focus on accessible forms and keyboard navigation.</li>
+        </ul>
+        <p class="muted">Link: <a href="#" class="link-inline">Code</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year2"></span> Shivani Bisht</div>
+      <div class="muted">Back to <a href="index.html">Home</a></div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

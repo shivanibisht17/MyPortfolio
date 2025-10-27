@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shivani Bisht — Home</title>
+  <meta name="description" content="Shivani Bisht — Full Stack Developer (MERN & Flask)"/>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <div class="logo">SB</div>
+        <div class="brand-text">
+          <strong>Shivani Bisht</strong>
+          <small>Full Stack Developer • MERN & Flask</small>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+        <a href="resume.pdf" class="btn btn-ghost" download>Download Resume</a>
+
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌗</button>
+        <button id="mobileNavBtn" class="icon-btn mobile-only" aria-label="Open menu">☰</button>
+      </nav>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+      <a href="resume.pdf" download>Resume</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-left">
+        <h1>Hi, I'm <span class="accent">Shivani Bisht</span></h1>
+        <p class="lead">Aspiring Full Stack Developer skilled in MERN and Flask. I build responsive and scalable web apps, design RESTful APIs, implement secure authentication, and deploy to cloud platforms.</p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="projects.html">View Projects</a>
+          <a class="btn btn-ghost" href="contact.html">Contact Me</a>
+          <a class="btn btn-outline" href="resume.pdf" download>Download Resume</a>
+        </div>
+
+        <ul class="meta-list">
+          <li><strong>Education:</strong> B.Tech (CSE) — Graphic Era Hill University</li>
+          <li><strong>Location:</strong> Clement Town, Dehradun</li>
+          <li><strong>Contact:</strong> bishtshivani220385@gmail.com • 7017190074</li>
+        </ul>
+      </div>
+
+      <aside class="hero-right card">
+        <div class="avatar-wrap">
+          <img src="shivani.jpg" alt="Shivani Bisht" class="avatar">
+        </div>
+        <h3>Shivani Bisht</h3>
+        <p class="muted">Full Stack Developer • MERN & Flask</p>
+        <div class="socials">
+          <a class="chip" href="https://github.com/shivanibisht17" target="_blank" rel="noopener">GitHub</a>
+          <a class="chip" href="https://linkedin.com/in/shivani-bisht-26abb32ba" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="features container">
+      <article class="feature-card">
+        <h4>Robust Backends</h4>
+        <p>RESTful APIs with Node/Express and Flask, secure auth, role-based access and payment integration (Stripe).</p>
+      </article>
+
+      <article class="feature-card">
+        <h4>Responsive Frontends</h4>
+        <p>Modern UI using React, Vite, Tailwind (optional), or plain HTML/CSS for fast-loading pages.</p>
+      </article>
+
+      <article class="feature-card">
+        <h4>Cloud & DevOps</h4>
+        <p>Deployment on Google Cloud, containerization basics and CI-friendly structure.</p>
+      </article>
+    </section>
+
+    <section class="container quick-projects">
+      <h2>Selected Projects</h2>
+      <div class="grid-3">
+        <div class="proj">
+          <h3>QuickBite</h3>
+          <p>MERN-based food ordering app with Stripe payments, admin dashboard and order tracking.</p>
+          <a href="projects.html#quickbite" class="link-inline">See details →</a>
+        </div>
+
+        <div class="proj">
+          <h3>Pseudocode → C</h3>
+          <p>Flask app that parses pseudocode and generates C code — live editor with instant output.</p>
+          <a href="projects.html#pseudocode" class="link-inline">See details →</a>
+        </div>
+
+        <div class="proj">
+          <h3>Fitness Tracker UI</h3>
+          <p>React-based UI using Local Storage to track workouts and progress with responsive design.</p>
+          <a href="projects.html#fitness" class="link-inline">See details →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Shivani Bisht • Built with ❤️</div>
+      <div class="footer-right muted">Made accessible and responsive • <a href="mailto:bishtshivani220385@gmail.com">bishtshivani220385@gmail.com</a></div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

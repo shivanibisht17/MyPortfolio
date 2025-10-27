@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Shivani</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- header (same) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <div class="logo">SB</div>
+        <div class="brand-text"><strong>Shivani Bisht</strong><small>Full Stack Developer</small></div>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="resume.pdf" class="btn btn-ghost" download>Resume</a>
+        <button id="themeToggle4" class="icon-btn" aria-label="Toggle theme">🌗</button>
+        <button id="mobileNavBtn4" class="icon-btn mobile-only" aria-label="Open menu">☰</button>
+      </nav>
+    </div>
+    <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+      <a href="index.html">Home</a><a href="projects.html">Projects</a><a href="skills.html">Skills</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="container contact-hero">
+      <h1>Contact Me</h1>
+      <p class="lead">Have an opportunity or a question? Send a message or reach me on email/LinkedIn.</p>
+
+      <div class="card grid-2">
+        <div>
+          <h3>Message me</h3>
+          <form id="contactForm">
+            <label for="name">Name</label>
+            <input id="name" type="text" required>
+
+            <label for="email">Email</label>
+            <input id="email" type="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+
+            <div class="form-row">
+              <button class="btn btn-primary" type="submit">Send Message</button>
+              <button class="btn btn-ghost" type="button" id="mailToBtn">Open Email Client</button>
+            </div>
+            <p id="formStatus" class="muted" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside>
+          <h3>Contact Info</h3>
+          <p>📍 Clement Town, Dehradun, Uttarakhand<br>📧 <a href="mailto:bishtshivani220385@gmail.com">bishtshivani220385@gmail.com</a><br>📞 7017190074</p>
+          <div class="socials">
+            <a class="chip" href="https://github.com/shivanibisht17" target="_blank">GitHub</a>
+            <a class="chip" href="https://linkedin.com/in/shivani-bisht-26abb32ba" target="_blank">LinkedIn</a>
+          </div>
+
+          <h4 style="margin-top:18px">Use EmailJS (optional)</h4>
+          <p class="muted">To send emails from the form without your backend, sign up at EmailJS, create a service & template, then plug in your <code>userID</code>, <code>serviceID</code>, and <code>templateID</code> in <code>js/script.js</code> (there's commented guidance).</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year4"></span> Shivani Bisht</div>
+      <div class="muted"><a href="index.html">Back</a></div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
